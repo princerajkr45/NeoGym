@@ -4,12 +4,11 @@ import { useState } from "react";
 import axios from 'axios'
 
 function SignIn() {
-    // const googleAuth = () => {
-    //     window.open(
-    //         `${process.env.REACT_APP_API_URL}/auth/google/callback`,
-    //         "_self"
-    //     );
-    // };
+    const googleAuth = () => {
+        console.log(import.meta.env.VITE_API_URL)
+        window.open(`${import.meta.env.VITE_API_URL}/google/callback`, "_self");
+    };
+
 
     const [userName, setUserName] = useState('')
     const [email, setEmail] = useState('')
@@ -85,7 +84,7 @@ function SignIn() {
                         <p className="text-sm text-gray-700 my-2">or</p>
                         <button
                             className="w-[230px] h-[40px] flex items-center justify-center bg-white shadow-md text-gray-700 font-medium text-lg rounded-md mb-5 cursor-pointer"
-                        // onClick={googleAuth}
+                        onClick={googleAuth}
                         >
                             <img
                                 src="./images/google.png"
