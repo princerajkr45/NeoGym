@@ -9,7 +9,7 @@ import Why from './components/Why'
 import Trainner from './components/Trainner'
 import Contact from './components/Contact'
 import LogIn from './components/LogIn'
-import SignIn from './components/SignIn'
+import SignUp from './components/SignUp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,7 +24,7 @@ function App() {
           <Route path='/trainner' element={<Trainner />} />
           <Route path='/contact' element={<Contact />} /> 
           <Route path='/login' element={<LogIn />} />
-          <Route path='/signin' element={<SignIn />} />
+          <Route path='/signup' element={<SignUp />} />
         </Routes>
 
     </Router>

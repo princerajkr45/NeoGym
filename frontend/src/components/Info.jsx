@@ -23,19 +23,19 @@ function Info() {
                 <div className="flex flex-col md:flex-row justify-around items-center space-y-6 md:space-y-0 md:space-x-6">
                     <div className="flex flex-col gap-3 items-center">
                         <FaLocationDot className="text-4xl" />
-                        <a href="#" className="text-xl">Location</a>
+                        <a href="#" className="text-sm">Location</a>
                     </div>
                     <div className="flex flex-col gap-3 items-center">
                         <a href={`tel:${phoneNumber}`} onClick={handleCall}>
                             <BiSolidPhoneCall className="text-4xl" />
                         </a>
-                        <a href={`tel:${phoneNumber}`} onClick={handleCall} className="text-xl">{phoneNumber}</a>
+                        <a href={`tel:${phoneNumber}`} onClick={handleCall} className="text-sm">{phoneNumber}</a>
                     </div>
                     <div className="flex flex-col gap-3 items-center">
                         <a href={`mailto:${emailAddress}`} onClick={handleEmail}>
                             <CiMail className="text-4xl" />
                         </a>
-                        <a href={`mailto:${emailAddress}`} onClick={handleEmail} className="text-xl">{emailAddress}</a>
+                        <a href={`mailto:${emailAddress}`} onClick={handleEmail} className="text-sm">{emailAddress}</a>
                     </div>
                 </div>
             </section>

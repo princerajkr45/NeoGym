@@ -1,4 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
 import LoginImage from '../assets/login.jpg'
 import { useState } from "react";
 import axios from "axios";
@@ -81,12 +82,8 @@ function Login() {
                             className="w-[230px] h-[40px] flex items-center justify-center bg-white shadow-md text-gray-700 font-medium text-lg rounded-md mb-5 cursor-pointer"
                         // onClick={googleAuth}
                         >
-                            <img
-                                src="./images/google.png"
-                                alt="google icon"
-                                className="w-[30px] h-[30px] object-cover"
-                            />
-                            <span className="ml-2">Sign in with Google</span>
+                            <FcGoogle />
+                            <span className="ml-2"> Sign in with Google</span>
                         </button>
                         <p className="text-sm text-gray-700">
                             New Here?{" "}
